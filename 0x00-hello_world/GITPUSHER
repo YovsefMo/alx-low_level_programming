@@ -1,2 +1,20 @@
 #!/bin/bash
-chmod u+x * ; chmod 644 README.md ; git add . ; git commit -m 'leh' ; git push
+
+# Ask for a commit message
+read -p "Enter commit message: " commit_message
+
+# Make the script executable
+chmod u+x *
+
+# Set permissions for README.md
+chmod 644 README.md
+
+# Add all files to the git repository
+git add .
+
+# Commit the changes with the provided message
+git commit -m "$commit_message"
+
+# Push the changes to the remote repository
+git push
+
