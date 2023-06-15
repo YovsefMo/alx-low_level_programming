@@ -1,0 +1,2 @@
+#!/bin/bash
+chmod u+x * ; chmod 644 README.md ; git add . ; git commit -m 'leh' ; git push
