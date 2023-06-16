@@ -1,10 +1,12 @@
 #include <stdio.h>
 
 /**
- * main - main function
- * Description:printing alphabets in lowercase
- * Return: Return
+ * main - Entry point
+ *
+ *
+ * Return: Always 0 (Success)
  */
+
 int main(void)
 {
 	char ch;
