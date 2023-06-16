@@ -3,32 +3,35 @@
 /**
  * main - Entry point
  *
- * Return: Always 0 (Success)
+ * Return: Always 0 (Succes)
  */
+
 int main(void)
 {
-    int x, y, z;
+	int n;
+	int i;
+	int h;
 
-    for (x = 0; x < 10; x++)
-    {
-        for (y = x + 1; y < 10; y++)
-        {
-		for (z = y +1; z < 10; z++)
+	for (h = 0 ; h != 8 ; h++)
+	{
+		for (n = h + 1 ; n != 9 ; n++)
 		{
-        		putchar(x + '0');
-            		putchar(y + '0');
-                        putchar(z + '0');
+			i = n + 1;
+			do {
+				putchar('0' + h);
+				putchar('0' + n);
+				putchar('0' + i);
+				if (h != 7)
+				{
+					putchar(',');
+					putchar(32);
+				}
+				i++;
+			} while (i != 10);
 		}
-
-            	if (x != 7 || y != 8 || z != 9)
-            	{
-                	putchar(',');
-                	putchar(' ');
-            	}
-         }
-     }
-
-    putchar('\n');
-    return 0;
+	}
+	putchar('\n');
+	return (0);
 }
+
 
