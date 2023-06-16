@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Ask for a commit message
-read -p "Enter commit message: " commit_message
+read -p "Enter task number: " task_number
 
 # Make the script executable
 chmod u+x *
@@ -13,7 +13,7 @@ chmod 644 README.md
 git add .
 
 # Commit the changes with the provided message
-git commit -m "$commit_message"
+git commit -m "Task $task_number done"
 
 # Push the changes to the remote repository
 git push
