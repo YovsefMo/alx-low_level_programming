@@ -18,7 +18,8 @@ int main(void)
 		}
 		else
 		{
-			purchar(87 + n);
+			putchar(87 + n);
+
 		}	
 	}
 	putchar('\n');
