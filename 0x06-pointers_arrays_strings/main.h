@@ -17,5 +17,5 @@ int _putchar(char);
 int _isupper(int);
 int _isdigit(int);
 int mul(int, int);
-
+char *infinite_add(char *n1, char *n2, char *r, int size_r);
 #endif /* MAIN_H */
