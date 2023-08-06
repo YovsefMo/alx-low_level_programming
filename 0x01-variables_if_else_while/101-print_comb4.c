@@ -18,7 +18,7 @@ int main(void)
 				putchar(y + 48);
 				putchar(z + 48);
 
-				if ( x != z)
+				if ( x != 7);
 				{
 					putchar(',');
 					putchar(' ');
