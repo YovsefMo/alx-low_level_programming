@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * Main - Main function prints a number and checks if it's positive, negative or zero.
+ * main - Main function prints and checks.
  * Description: Another application of if.
  * Return: 0
  */
