@@ -14,9 +14,9 @@ int main(void)
 		{
 			z = y + 1;
 			do {
-				putchar(x + 48)
-				putchar(y + 48)
-				putchar(z + 48)
+				putchar(x + 48);
+				putchar(y + 48);
+				putchar(z + 48);
 
 				if ( x != z)
 				{
