@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- * main - prints 2 digit combinations
- * Description: Prints unique 2 digit combinations
+ * main - prints 2 digit combinations twice
+ * Description: Prints unique 2 digit combinations twice
  * Return: 0
  */
 int main(void)
@@ -19,10 +19,10 @@ int main(void)
 			putchar((m % 10) + 48);
 
 			if (n == 98 && m == 99)
-			{
-				putchar(',');
-				putchar(' ');
-			}
+				continue;
+
+			putchar(',');
+			putchar(' ');
 		}
 	}
 
