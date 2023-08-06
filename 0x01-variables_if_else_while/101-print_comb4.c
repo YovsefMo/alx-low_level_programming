@@ -10,9 +10,9 @@ int main(void)
 	
 	for (x = 0 ; x != 8 ; x++)
 	{
-		for (y = x + 1 ; y != 9 ; n++)
+		for (y = x + 1 ; y != 9 ; y++)
 		{
-			z = y + 1
+			z = y + 1;
 			do {
 				putchar(x + 48)
 				putchar(y + 48)
