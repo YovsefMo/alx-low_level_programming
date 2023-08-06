@@ -6,28 +6,28 @@
  */
 int main(void)
 {
-	int n, m, i;
-
-	for (n = 0 ; n < 10 ; n++)
+	int x, y, z;
+	
+	for (x = 0 ; x != 8 ; x++)
 	{
-		for (m = n + 1 ; m < 10 ; m++)
+		for (y = x + 1 ; y != 9 ; n++)
 		{
-			for(i = m ; i < 10 ; i++)
-			{
-				putchar(n + 48);
-				putchar(m + 48);
-				putchar(i + 48);
-			}
+			z = y + 1
+			do {
+				putchar(x + 48)
+				putchar(y + 48)
+				putchar(z + 48)
 
-			if (n != 7 || m != 8 || i != 9)
-			{
-				putchar(',');
-				putchar(' ');
-			}
+				if ( x != z)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+				z++;
+
+			}while (z != 10);
 		}
 	}
-
 	putchar('\n');
-
 	return (0);
 }
