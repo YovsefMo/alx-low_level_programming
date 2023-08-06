@@ -10,7 +10,7 @@ int main(void)
 
 	for (n = 'a'; n <= 'z'; n++)
 	{
-		if ((c == 'q' || c == 'e') != 1)
+		if ((n == 'q' || n == 'e') != 1)
 		{
 			putchar(n);
 		}
