@@ -16,7 +16,7 @@ int main(void)
 		}
 		else
 		{
-			putchat(n + 87);
+			putchar(n + 87);
 		}
 	}
 
