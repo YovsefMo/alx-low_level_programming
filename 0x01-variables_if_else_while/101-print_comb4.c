@@ -7,7 +7,7 @@
 int main(void)
 {
 	int x, y, z;
-	
+
 	for (x = 0 ; x != 8 ; x++)
 	{
 		for (y = x + 1 ; y != 9 ; y++)
@@ -18,14 +18,14 @@ int main(void)
 				putchar(y + 48);
 				putchar(z + 48);
 
-				if ( x != 7)
+				if (x != 7)
 				{
 					putchar(',');
 					putchar(' ');
 				}
 				z++;
 
-			}while (z != 10);
+			} while (z != 10);
 		}
 	}
 	putchar('\n');
