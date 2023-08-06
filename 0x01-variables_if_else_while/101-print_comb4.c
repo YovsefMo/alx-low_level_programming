@@ -16,7 +16,7 @@ int main(void)
 			{
 				putchar(n + 48);
 				putchar(m + 48);
-				putchat(i + 48);
+				putchar(i + 48;
 			}
 
 			if (n != 7 || m != 8 || i != 9)
