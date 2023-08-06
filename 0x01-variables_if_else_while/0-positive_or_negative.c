@@ -3,8 +3,8 @@
 #include <time.h>
 /**
  * main - function pr
- *
- * Return value: 0
+ * Description: A simple program applying if statements.
+ * Return: 0
  *
 */
 int main(void)
