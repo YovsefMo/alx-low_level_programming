@@ -1,7 +1,7 @@
 #include "main.h"
-/** 
+/**
  * main - prints text
- * descreption - none
+ * description - none
  * return - 0
  */
 int main(void)
