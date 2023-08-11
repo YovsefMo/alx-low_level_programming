@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * _islower - checker
- * @c: character to be checked
- * Return= 1 if c, else 0
+ *_islower - checker
+ *@c: character to be checked
+ *Return= 1 or 0
  */
 int _islower(int c)
 {
