@@ -5,7 +5,7 @@
  * 
  * Return: 0
  */
-void print_alphabest(void)
+void print_alphabet(void)
 {
 	int i;
 	for (i = 'a' ; i <= 'z' ; i++)
@@ -13,7 +13,6 @@ void print_alphabest(void)
 		_putchar(i);
 	}
 
-	_putchar (10);
+	_putchar(10);
 
-	return (0);
 }
