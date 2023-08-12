@@ -1,0 +1,10 @@
+#ifdef MAIN_H
+#define MAIN_H
+#include <stdio.h>
+/**
+ * main.h
+ * Author: YovsefMo
+ * Description: Debuggin'
+ */
+void positive_or_negative(int i);
+#endif /* MAIN_H */
