@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * jack_bauer - 24 hours sys
+ * jack_bauer - 24 hours sy
  * Return: void
  */
 void jack_bauer(void)
