@@ -9,12 +9,11 @@ void times_table(void)
 
 	for (x = 0 ; x < 10 ; x++)
 	{
+		_putchar('0');
+
 		for (y = 0 ; y < 10 ; y++)
 		{
 			z = x * y;
-
-			if (x == 0)
-				_putchar(z + '0');
 
 			if (z < 10 && x != 0)
 			{
