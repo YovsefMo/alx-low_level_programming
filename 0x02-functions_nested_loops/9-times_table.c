@@ -12,17 +12,23 @@ void times_table(void)
 		for (y = 0 ; y < 10 ; y++)
 		{
 			z = x * y;
-			_putchar(z + '0');
-			
 
-			if (z != (x * x))
+			if (x == 0)
+				_putchar(z + '0');
+			if (z < 10 && x != 0)
 			{
 				_putchar(',');
 				_putchar(' ');
 				_putchar(' ');
+				_putchar(z + '0');
+			}
+			else if(z >= 19)
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
+				_putchar((z / 10) + '0');
+				_putchar((z % 10) + '0');
 			}
 		}
-
-		_putchar('\n');
 	}
-}
