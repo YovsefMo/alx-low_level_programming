@@ -6,11 +6,11 @@
  */
 void print_diagonal(int n)
 {
-	int m;
 
-	while(n > 0)
+	while (n > 0)
 	{
 		_putchar(' ');
+		n--;
 	}
 
 	_putchar('\\');
