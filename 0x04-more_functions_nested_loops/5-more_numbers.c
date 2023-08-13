@@ -12,7 +12,7 @@ void more_numbers(void)
 		{
 			_putchar(z + '0');
 
-			if(z < 9)
+			if(z > 9)
 			{
 				_putchar((z % 10) + '0');
 			}
