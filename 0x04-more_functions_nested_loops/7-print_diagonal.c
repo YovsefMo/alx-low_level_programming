@@ -1,31 +1,28 @@
 #include "main.h"
+
 /**
- * print_diagonal - prints a dia line
+ * print_diagonal - prints a diagonal line
  * @n: spaces parameter
- * Return: 0
+ * Return: void
  */
 void print_diagonal(int n)
 {
-	int m;
-	int o = n;
+    int m, o;
 
-	for(m = 0 ; m <= o ; m++)
-	{
-		int s = m;
+    for (o = 0; o < n; o++)
+    {
+        for (m = 0; m < o; m++)
+        {
+            _putchar(' ');
+        }
+        
+        _putchar('\\');
+        
+        _putchar('\n');
+    }
 
-		if ((m != 0) && (m > 0))
-		{
-
-			while(s > 0)
-			{
-				_putchar(' ');
-				s--;
-			}
-
-			_putchar('\\');
-			_putchar('\n');
-		}
-		else
-			_putchar('\n');
-	}
+    if (n <= 0)
+    {
+        _putchar('\n');
+    }
 }
