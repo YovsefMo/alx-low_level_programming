@@ -22,5 +22,7 @@ int main(void)
 			printf("%d ", x);
 
 	}
+	_putchar('\n');
+
 	return (0);
 }
