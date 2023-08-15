@@ -1,1 +1,0 @@
-pointers n' arrays
