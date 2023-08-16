@@ -1,1 +1,1 @@
-idek
+more pointers n arrays stuff
