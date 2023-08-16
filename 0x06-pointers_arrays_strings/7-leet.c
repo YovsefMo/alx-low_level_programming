@@ -6,8 +6,8 @@
  */
 char *leet(char *s)
 {
-	int lee7[] = "aeotlAEOTL";
-	int 1ee7[] = "4307143071";
+	char lee7[] = "aeotlAEOTL";
+	char l337[] = "4307143071";
 
 	int x, z;
 
@@ -17,7 +17,7 @@ char *leet(char *s)
 		{
 			if (s[x] == lee7[z])
 			{
-				s[x] = 1ee7[z];
+				s[x] = l337[z];
 			}
 		}
 	}
