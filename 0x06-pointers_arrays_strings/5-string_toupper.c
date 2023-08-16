@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  * string_toupper - lower to upper
+ * @s: targeted array pointer
  * Return: upper case string
  */
 char *string_toupper(char *s)
@@ -9,7 +10,7 @@ char *string_toupper(char *s)
 
 	for (i = 0 ; s[i] != '\0' ; i++)
 	{
-		if(s[i] >= 'a' && s[i] <= 'z')
+		if (s[i] >= 'a' && s[i] <= 'z')
 		{
 			s[i] = s[i] - 32;
 		}
