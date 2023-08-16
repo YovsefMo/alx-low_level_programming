@@ -17,7 +17,7 @@ void rev_string(char *s)
 
 	x = i - 1;
 
-	for (z = 0 ; z > i ; z++)
+	for (z = 0 ; z < i / 2 ; z++)
 	{
 		swp = s[z];
 		s[z] = s[x];
