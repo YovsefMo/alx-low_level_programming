@@ -2,7 +2,7 @@
 /**
  * _strcmp - compares 2 strings
  * @s1: first string
- * @s2 second string
+ * @s2: second string
  * Return: + or 0 or -
  */
 int _strcmp(char *s1, char *s2)
