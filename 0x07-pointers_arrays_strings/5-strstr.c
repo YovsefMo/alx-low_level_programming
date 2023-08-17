@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * strstr - checks for substring occurrence
+ * _strstr - checks for substring occurrence
  * @haystack: original string
  * @needle: substring
  * Return: pointer to substring occurrence
