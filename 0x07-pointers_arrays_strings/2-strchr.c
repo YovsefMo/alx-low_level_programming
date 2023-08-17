@@ -9,18 +9,20 @@ char *_strchr(char *s, char c)
 {
 	int x;
 
-	while (s[x] != '\0')
+	while (*s != '\0')
 	{
-		if (s[x] == c)
+		if (*s == c)
 		{
 			return (s);
 		}
-		x++;
+		else
+			s++;
 	}
 
 	if (*s == c)
 	{
 		return (s);
 	}
-	return (0);
+	else
+		return (0);
 }
