@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * _strpbrk - sets a pointer to
  * where @accept element appears
@@ -23,5 +24,5 @@ char *_strpbrk(char *s, char *accept)
 		x++;
 	}
 
-	return ('\0');
+	return (NULL);
 }
