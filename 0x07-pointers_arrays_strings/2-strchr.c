@@ -13,20 +13,14 @@ char *_strchr(char *s, char c)
 	{
 		if (s[x] == c)
 		{
-			return (x);
+			return (&s[x]);
 		}
-		else
-		{
 			x++;
-		}
 	}
 
-	if (s[x] != NULL)
+	if (s[x] == c)
 	{
-		return (x);
+		return (s);
 	}
-	else
-	{
-		return (NULL);
-	}
+	return (NULL);
 }
