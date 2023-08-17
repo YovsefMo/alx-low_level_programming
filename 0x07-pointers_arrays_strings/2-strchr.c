@@ -15,12 +15,12 @@ char *_strchr(char *s, char c)
 		{
 			return (&s[x]);
 		}
-			x++;
+		x++;
 	}
 
 	if (s[x] == c)
 	{
 		return (s);
 	}
-	return (NULL);
+	return (0);
 }
