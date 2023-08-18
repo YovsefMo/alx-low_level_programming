@@ -25,5 +25,5 @@ int _sqrt_recursion2(int n, int i)
 	else if (i * i == n)
 		return (i);
 
-	return _sqrt_recursion2(n, i + 1);
+	return (_sqrt_recursion2(n, i + 1));
 }
