@@ -26,14 +26,14 @@ int main(int argc, char *argv[])
 
 			for (y = 0 ; y < length ; y++)
 			{
-				if (isdigit(*(ptr + y)) == 0)
+				if (!isdigit(*(ptr + y)))
 				{
 					printf("Error\n");
 					return (1);
 				}
 			}
 
-			sum += atoi(argv[i]);
+			sum += atoi(argv[x]);
 		}
 		printf("%d\n)", sum);
 	}
