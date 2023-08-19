@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
 {
 	int x, y;
 
-	if (argc == 1 || argc ==2)
+	if (argc != 3)
 	{
 		printf("Error\n");
 		return (1);
@@ -19,8 +19,8 @@ int main(int argc, char *argv[])
 	{
 		x = 1;
 
-		for (y = 1 ; y < 3 ; i++)
-			x *= atol(argv[i]);
+		for (y = 1 ; y < 3 ; y++)
+			x *= _atoi(argv[y]);
 
 		printf("%d\n", x);
 
