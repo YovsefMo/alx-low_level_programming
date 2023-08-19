@@ -4,7 +4,7 @@
  * @s: input string pointer
  * Return: converted string
  */
-int _atol(char *s)
+int _atoi(char *s)
 {
 	int x = 0;
 	int y = 0;
@@ -21,11 +21,11 @@ int _atol(char *s)
 		if (s[x] == '-')
 			++y;
 
-		if (s[x] >= '0' && s[x] < '10')
+		if (s[x] >= '0' && s[x] <= '9')
 		{
 			digit = s[x] - '0';
 
-			if (d % 2)
+			if (y % 2)
 				digit = -digit;
 
 			z = z * 10 + digit;
@@ -38,11 +38,12 @@ int _atol(char *s)
 			valid = 0;
 		}
 
-		i++;
+		x++;
 	}
 
 	if (valid == 0)
 		return (0);
 
-	return (n);
+	return (z);
+	
 }
