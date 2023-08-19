@@ -4,7 +4,7 @@
  * main - prints programs name
  * @argc: number of command line args
  * @argv: array name
- * Return 0
+ * Return: 0
  */
 int main (int argc, char *argv[])
 {
