@@ -3,7 +3,7 @@
 /**
  * main - prints number of args\n
  * @argc: number of command line args
- * @argc: array name 
+ * @argv: array name 
  * Return: 0
  */
 int main(int argc, char *argv[])
