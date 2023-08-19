@@ -1,20 +1,26 @@
 #include "main.h"
-
 /**
- * _strchr - Entry point
- * @s: input value
- * @c: input value
- * Return: Always 0 (Success)
- */
-
+ * _strchr - locates a character
+ * @s: targeted array pointer
+ * @c: character to located
+ * Return: c or null
+ */ 
 char *_strchr(char *s, char c)
 {
-	int i = 0;
-
-	for (; s[i] >= '\0'; i++)
+	while (*s != '\0')
 	{
-		if (s[i] == c)
-			return (&s[i]);
+		if (*s == c)
+		{
+			return (s);
+		}
+		else
+			s++;
 	}
-	return (0);
+
+	if (*s == c)
+	{
+		return (s);
+	}
+	else
+		return (0);
 }

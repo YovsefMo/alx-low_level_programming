@@ -1,0 +1,14 @@
+#!/bin/bash
+
+while true; do
+    echo "Enter the filename (without .c extension), or type 'exit' to quit:"
+    read filename
+
+    if [ "$filename" = "exit" ]; then
+        echo "Exiting..."
+        break
+    fi
+
+    gcc -c "$filename.c" -o "$filename.o"
+    echo "Compilation done: $filename.c -> $filename.o"
+done

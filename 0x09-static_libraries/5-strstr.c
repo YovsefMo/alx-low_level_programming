@@ -1,28 +1,27 @@
 #include "main.h"
-
 /**
- * _strstr - Entry point
- * @haystack: input value
- * @needle: input value
- * Return: Always 0 (Success)
+ * _strstr - checks for substring occurrence
+ * @haystack: original string
+ * @needle: substring
+ * Return: pointer to substring occurrence
  */
-
 char *_strstr(char *haystack, char *needle)
 {
-	for (; *haystack != '\0'; haystack++)
+	for (; *haystack != '\0' ; haystack++)
 	{
-		char *p = haystack;
-		char *pt = needle;
+		char *x = haystack;
+		char *y = needle;
 
-		while (*p == *pt && *pt != '\0')
+		while (*x == *y && *y != '\0')
 		{
-			p++;
-			pt++;
+			x++;
+			y++;
 		}
 
-		if (*pt == '\0')
+		if (*y == '\0')
+		{
 			return (haystack);
+		}
 	}
-
 	return (0);
 }

@@ -1,25 +1,27 @@
 #include "main.h"
-
 /**
- * _strpbrk - Entry point
- * @s: input value
- * @accept: input value
- * Return: Always 0 (Success)
+ * _strpbrk - sets a pointer to
+ * where @accept element appears
+ * @s: input
+ * @accept: array of elements to be compared to
+ * Return: pointer to @accept occurance
  */
-
 char *_strpbrk(char *s, char *accept)
 {
-		int i;
+	int x = 0;
+	int y;
 
-		while (*s)
+	while (s[x] != '\0')
+	{
+		for (y = 0 ; accept[y] ; y++)
 		{
-			for (i = 0; accept[i]; i++)
+			if (s[x] == accept[y])
 			{
-			if (*s == accept[i])
-			return (s);
+				return (&s[x]);
 			}
-		s++;
 		}
+		x++;
+	}
 
 	return ('\0');
 }
