@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _atol - string to int
+ * _atoi - string to int
  * @s: input string pointer
  * Return: converted string
  */
@@ -45,5 +45,5 @@ int _atoi(char *s)
 		return (0);
 
 	return (z);
-	
+
 }
