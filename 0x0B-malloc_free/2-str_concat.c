@@ -32,19 +32,13 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 	}
 
-	for (q = 0 ; q < z ; q++)
-		{
-			if (s1[w] != '\0')
-			{
-				s3[q] = s1[w];
-				w++;
-			}
-			if (s3[e] != '\0')
-			{
-				s3[q] = s2[e];
-				e++;
-			}
-		}
+	for (; s1[w] != '\0' ; w++)
+		s3[q] = s1[q];
+	for (; s2[e] != '\0' ; w++)
+	{
+		s3[q] = s2[e];
+		e++;
+	}
 
-	return(s3);
+	return (s3);
 }
