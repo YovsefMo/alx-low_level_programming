@@ -7,16 +7,16 @@
  */
 char *_strdup(char *str)
 {
-	int x;
+	int x, y;
 	char *strml;
 
-	if (str = NULL)
+	if (str == NULL)
 		return (NULL);
 
 	while (str[x] != '\0')
 		x++;
 
-	strml = (char*)malloc(n + 1 * sizeof(char));
+	strml = (char*)malloc(x + 1 * sizeof(char));
 
 	if (strml != NULL)
 	{
@@ -24,9 +24,9 @@ char *_strdup(char *str)
 			strml[x] = str[y];
 	}
 	else 
-		Return (NULL);
+		return (NULL);
 
-	strml[i] = '\0';
+	strml[y] = '\0';
 
 	return (strml);
 
