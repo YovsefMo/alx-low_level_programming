@@ -23,7 +23,7 @@ char *_strdup(char *str)
 		for (y = 0 ; str[y] != '\0' ; y++)
 			strml[y] = str[y];
 	}
-	else 
+	else
 		return (NULL);
 
 	strml[y] = '\0';
