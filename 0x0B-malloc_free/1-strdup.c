@@ -7,7 +7,7 @@
  */
 char *_strdup(char *str)
 {
-	int x, y;
+	int x = 0, y;
 	char *strml;
 
 	if (str == NULL)
@@ -16,12 +16,12 @@ char *_strdup(char *str)
 	while (str[x] != '\0')
 		x++;
 
-	strml = (char*)malloc(x + 1 * sizeof(char));
+	strml = (char *)malloc(x + 1 * sizeof(char));
 
 	if (strml != NULL)
 	{
-		for (y = 0 ; str[y] ; y++)
-			strml[x] = str[y];
+		for (y = 0 ; str[y] != '\0' ; y++)
+			strml[y] = str[y];
 	}
 	else 
 		return (NULL);
