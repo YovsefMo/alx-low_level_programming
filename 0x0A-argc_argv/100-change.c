@@ -1,7 +1,6 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-
 /**
  * main - coin changer
  * @argc: Number of command line arguments
@@ -12,6 +11,7 @@ int main(int argc, char *argv[])
 {
     int coins[] = {25, 10, 5, 2, 1};
     int i, cents, minCoins = 0;
+    int numCoins;
 
     if (argc != 2)
     {
@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
         return (0);
     }
 
-    int numCoins = sizeof(coins) / sizeof(coins[0]);
+    numCoins = sizeof(coins) / sizeof(coins[0]);
 
     for (i = 0; i < numCoins; i++)
     {
