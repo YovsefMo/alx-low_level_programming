@@ -1,44 +1,43 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
  * main - coin changer
- * @argc: Number of comand line args
- * @argv: Array name
- * @Return: Coins number
+ * @argc: Number of command line arguments
+ * @argv: Array of command line arguments
+ * Return: 0 for success, 1 for error
  */
 int main(int argc, char *argv[])
 {
+    int coins[] = {25, 10, 5, 2, 1};
+    int i, cents, minCoins = 0;
 
-	int coins[] = {25, 10, 5, 2, 1};
-	int coins[] = {25, 10, 5, 2, 1};
-	int i, cents, minCoins = 0;
+    if (argc != 2)
+    {
+        printf("Error\n");
+        return (1);
+    }
 
-	if (argc != 2)
-	{
-		printf("Error\n");
-		return (1);
-	}
+    cents = atoi(argv[1]);
 
-	cents = atoi(argv[1]);
+    if (cents < 0)
+    {
+        printf("0\n");
+        return (0);
+    }
 
-	if (cents < 0)
-	{
-		printf("0\n");
-		return (0);
-	}
+    int numCoins = sizeof(coins) / sizeof(coins[0]);
 
-	minCoins = 0;
+    for (i = 0; i < numCoins; i++)
+    {
+        while (cents >= coins[i])
+        {
+            cents -= coins[i];
+            minCoins++;
+        }
+    }
 
-	for (i = 0; i < numCoins; i++) 
-	{
-		while (cents >= coins[i])
-		{
-			cents -= coins[i];
-			minCoins++;
-		}
-	}
-
-	printf("%d\n", minCoins);
-	return (0);
+    printf("%d\n", minCoins);
+    return (0);
 }
