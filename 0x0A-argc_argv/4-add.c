@@ -1,6 +1,8 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
+#include <type.h>
 /**
  * main - adds positive numbers
  * @argc: Number of command line args
@@ -19,7 +21,7 @@ int main(int argc, char *argv[])
 		sum = 0;
 		for (x = 1 ; x < argc ; x++)
 		{
-			ptr = argc[x];
+			ptr = argv[x];
 			length = strlen(ptr);
 
 			for (y = 0 ; y < length ; y++)
