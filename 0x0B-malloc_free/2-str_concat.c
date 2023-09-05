@@ -31,6 +31,7 @@ char *str_concat(char *s1, char *s2)
 		counter++;
 		len3++;
 	}
+
 	counter = 0;
 
 	while (counter <= len2)
