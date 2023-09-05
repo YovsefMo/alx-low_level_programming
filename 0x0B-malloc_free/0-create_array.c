@@ -10,10 +10,12 @@ char *create_array(unsigned int size, char c)
 	char *ar;
 	int counter = 0;
 
-	if (size == 0)
+	if (size <= 0)
 		return (NULL);
 
 	ar = malloc(sizeof(char) * size);
+	if (ar == NULL)
+		return (NULL);
 
 	while (ar[counter] != '\0')
 	{
