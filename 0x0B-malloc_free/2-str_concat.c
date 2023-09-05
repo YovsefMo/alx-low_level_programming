@@ -32,7 +32,7 @@ char *str_concat(char *s1, char *s2)
 	if (s3 == NULL)
 		return (NULL);
 
-	while (counter < len)
+	while (counter < len1)
 	{
 		s3[len3] = s1[counter];
 		counter++;
