@@ -25,7 +25,7 @@ char *str_concat(char *s1, char *s2)
 	if (s3 == NULL)
 		return (NULL);
 
-	while (counter < len1)
+	while (counter < (len1 - 1))
 	{
 		s3[len3] = s1[counter];
 		counter++;
@@ -34,14 +34,12 @@ char *str_concat(char *s1, char *s2)
 
 	counter = 0;
 
-	while (counter < len2)
+	while (counter <= len2)
 	{
 		s3[len3] = s2[counter];
 		counter++;
 		len3++;
 	}
-
-	s3[len3] = '\0';
 
 	return (s3);
 }
