@@ -31,16 +31,15 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s3 == NULL)
 		return (NULL);
 
-	while (counter < len1)
+	while (len3 < len1)
 	{
-		s3[len3] = s1[len1];
-		++counter;
+		s3[len3] = s1[len3];
 		len3++;
 	}
 	while (counter <= n)
 	{
-		s3[len3] = s2[n];
-		++counter;
+		s3[len3] = s2[counter];
+		counter++;
 		len3++;
 	}
 
