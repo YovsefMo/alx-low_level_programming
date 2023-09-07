@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * malloc_checked - allocates memory using malloc
+ * *malloc_checked - allocates memory using malloc
  * @b: size to be allocated
  * Return: pointer to allocated memory or 98
  */
