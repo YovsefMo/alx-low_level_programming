@@ -1,10 +1,5 @@
 #ifndef FUNCTION_POINTERS_H
 #define FUNCTION_POINTERS_H
-/**
- * fuction.pointers.h
- * Author: YovsefMo
- * For: 0x0F-function_pointers
- */
 
 #include <stdio.h>
 #include <stdlib.h>
