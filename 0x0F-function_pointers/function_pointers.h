@@ -1,7 +1,7 @@
 #ifndef FUNCTION_POINTERS_H
 #define FUNCTION_POINTERS_H
 /**
- * function_pointers.h
+ * main.h
  * Author: YovsefMo
  * For: 0x0F-function_pointers
  */
