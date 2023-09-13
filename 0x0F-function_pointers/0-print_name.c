@@ -12,4 +12,4 @@ if (name == NULL || f == NULL)
 return;
 
 f(name);
-}i
+}
