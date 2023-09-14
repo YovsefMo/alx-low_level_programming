@@ -10,14 +10,14 @@ void print_all(const char * const format, ...)
 
 	int x = 0, y = 0;
 	char *sep = ", ";
-	chat *str;
+	char *str;
 
 	va_start(args, format);
 
 	while (format && format[x])
 		x++;
 
-	while (format && format[n])
+	while (format && format[y])
 	{
 		if (y == (x - 1))
 			sep = "";
