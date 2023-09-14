@@ -2,7 +2,8 @@
 /**
  * print_all - prints different data types
  * @format: list of types
- * @Return: 0
+ * 
+ * Return: 0
  */
 void print_all(const char * const format, ...)
 {
