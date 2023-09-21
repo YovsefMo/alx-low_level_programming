@@ -7,7 +7,7 @@
  */
 size_t print_list(const list_t *h)
 {
-	size_t node_counter = 0;
+	unsigned int node_counter = 0;
 
 	while (h != NULL)
 	{
@@ -21,4 +21,4 @@ size_t print_list(const list_t *h)
 		node_counter++;
 	}
 	return (node_counter);
-}
+
