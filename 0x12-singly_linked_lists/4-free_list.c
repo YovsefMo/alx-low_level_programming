@@ -1,4 +1,4 @@
-#include "list.h"
+#include "lists.h"
 /**
  * free_list - frees a list_t list
  * @head: Const double pointer of structure list_t for beginning
