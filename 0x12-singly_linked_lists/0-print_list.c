@@ -21,4 +21,4 @@ size_t print_list(const list_t *h)
 		node_counter++;
 	}
 	return (node_counter);
-
+}
