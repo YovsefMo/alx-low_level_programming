@@ -3,6 +3,8 @@
  * delete_nodeint_at_index - deletes node at index
  * @head: pointer to a pointer to a listint_t list
  * @index: index
+ *
+ * Return: 1 or -1
  */
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
@@ -16,7 +18,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	{
 		*head = rmNode->next;
 		free(rmNode);
-		return(1);
+		return (1);
 	}
 
 	while (current && counter < index - 1)
